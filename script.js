@@ -2,7 +2,7 @@
 const slider = document.querySelector('.slider');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
-const slides = Array.from(slider.querySelectorAll('slider__item'));
+const slides = Array.from(slider.querySelectorAll('.slider__item'));
 const slideCount = slides.length;
 let slideIndex = 0;
 
