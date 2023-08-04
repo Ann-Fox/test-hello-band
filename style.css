@@ -5,16 +5,15 @@
 
 a {
   text-decoration: none;
-  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-}
-
-a:hover {
-  cursor: pointer;
 }
 
 .center {
@@ -72,22 +71,123 @@ a:hover {
   margin-top: 24px;
   margin-bottom: 40px;
 }
-.top__content__btn {
+.top__content__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top__content__bottom__btn {
   background: #3a4574;
   padding: 35px 64px;
-}
-.top__content__btn a {
-  font-size: 1.125rem;
+  -webkit-appearance: none;
+  border: 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 133.333% */
+  transition-duration: 0.4s;
+}
+.top__content__bottom__btn:hover {
+  background: #ffffff;
+  color: #3a4574;
+}
+.top__content__bottom__social {
+  gap: 25px;
+  display: flex;
+}
+.top__content__bottom__social_link {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  background: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+.top__content__bottom__social_link:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
+.main-menu {
+  padding-top: 80px;
+  padding-bottom: 242px;
+  display: flex;
+  gap: 3%;
+}
+.main-menu__left {
+  width: 40%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
 .main-menu__left_item {
   border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 20px;
 }
 .main-menu__left_delicacy {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+.main-menu__right {
+  width: 57%;
+  position: relative;
+}
+.main-menu__right_imgs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.main-menu__right_img-left {
+  position: absolute;
+  top: 152px;
+}
+.main-menu__right_img-right {
+  position: absolute;
+  left: 51%;
+}
+.main-menu__right_rectangle {
+  top: 51px;
+  position: absolute;
+  left: 97px;
+  z-index: -1;
+}
+
+.slider-section {
+  background: #3a4574;
+  display: flex;
+  text-align: center;
+  padding-top: 220px;
+  gap: 123px;
+  padding-bottom: 220px;
+}
+
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider__item {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  background: none;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
