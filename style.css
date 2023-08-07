@@ -182,6 +182,23 @@ body {
   left: 97px;
   z-index: -1;
 }
+.main-menu__hidden {
+  display: none;
+}
+
+.lanch-menu__right {
+  background-image: url(img/lanch-menu__rectangle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  align-items: flex-start;
+  width: 57%;
+}
+.lanch-menu__right__img-r {
+  margin-top: 152px;
+}
 
 .slider-section {
   background: #3a4574;
@@ -321,4 +338,108 @@ button:hover {
 
 .hidden {
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 188px);
+    padding-right: calc(50% - 188px);
+  }
+  .top__header {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .top__header__nav {
+    display: none;
+  }
+  .top__header__phone {
+    display: none;
+  }
+  .top__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__content__subtitle {
+    font-size: 1rem;
+  }
+  .top__content__title {
+    font-size: 1.5rem;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .top__content__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 85px;
+  }
+  .top__content__bottom__btn {
+    padding: 25px 24px;
+  }
+  .main-menu {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-menu__left {
+    width: 100%;
+    gap: 10px;
+  }
+  .main-menu__left_delicacy {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-direction: row;
+  }
+  .lanch-menu__right {
+    gap: 15px;
+    background-image: none;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+  }
+  .lanch-menu__right img {
+    min-width: 100%;
+  }
+  .lanch-menu__right__img-r {
+    margin-top: 0px;
+  }
+  .slider-section {
+    padding-top: 20px;
+    gap: 0;
+    padding-bottom: 20px;
+  }
+  .slider__item__title {
+    font-size: 1.25rem;
+    line-height: 20px;
+    margin-top: 34px;
+    margin-bottom: 20px;
+  }
+  .slider__item__text {
+    line-height: 20px;
+  }
+  .slider__item__subtitle {
+    font-size: 1rem;
+    letter-spacing: 6px;
+    margin-top: 25px;
+  }
+  .parent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .div2 {
+    grid-area: 2/1/2/3;
+  }
+  .div3 {
+    grid-area: 3/1/3/3;
+  }
 }/*# sourceMappingURL=style.css.map */
